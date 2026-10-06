@@ -1,4 +1,4 @@
-def search_student_score(id):
+def search(id):
     if id in dict:
             print(f"{dict[id][0]} {dict[id][1]}")
     else:
@@ -11,5 +11,5 @@ for i in range(n):
 #print(dict)
 I=int(input())
 for i in range(I):
-    sid = input()
-    search_student_score(sid)
+    sid = input().strip()#之前錯在沒加strip
+    search(sid)
